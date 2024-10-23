@@ -1,0 +1,66 @@
+/* Footer */
+footer {
+    background-color: var(--bg-second);
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 100px;
+}
+
+.footer>div {
+    flex: 1;
+}
+
+.footer>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.footer>div:first-child>h2 {
+    font-size: 1.2rem;
+    color: var(--color-second);
+}
+
+.footer>div:first-child>p {
+    font-size: 0.9rem;
+    color: var(--color-third);
+}
+
+.footer>div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer>div:last-child>form {
+    flex: 1;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer>div:last-child>form>input {
+    margin-right: 10px;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    box-shadow: 1px 2px 2px gray;
+    border-radius: 30px;
+}
+
+.footer>div:last-child>form>button {
+    background-color: var(--color-primary);
+
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.footer>div:last-child>form>button>i {
+    color: var(--bg-second);
+    padding: 6px;
+}

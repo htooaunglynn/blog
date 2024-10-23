@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --bg-color: white;
+    --bg-second: #f8f9fa;
+    --color-hover: #8bc34a;
+    --color-primary: #000;
+    --color-second: #343a40;
+    --color-third: #6c757d;
+    --font-family: "Cabin", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font-family);
+    list-style: none;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.nav-container,
+footer {
+    flex: 0 1 150px;
+
+}
+
+.body-main {
+    flex: 1 1 629px;
+}
+
+.nav-container {
+    border-bottom: 1px solid var(--color-third);
+}
+
+.nav-container,
+.body-main,
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container>section:first-child,
+.nav-container>section:last-child,
+.body-main>section:first-child,
+.body-main>section:last-child,
+footer>section:first-child,
+footer>section:last-child {
+    flex: 2;
+}
+
+
+.nav,
+.footer,
+.main {
+    flex: 8;
+}
